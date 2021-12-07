@@ -7,13 +7,17 @@
 
 /* ヘッダーの設定 */
 header {
-  height: 50px; /*高さ50px*/
-  background-color: #ff9a4b; /*背景色の指定*/
+  height: 50px;
+  /*高さ50px*/
+  background-color: #ff9a4b;
+  /*背景色の指定*/
 }
 
 main {
-  width: 960px; /*横幅の指定*/
-  margin: 50px auto; /*縦50px横autoの中央寄せ*/
+  width: 960px;
+  /*横幅の指定*/
+  margin: 50px auto;
+  /*縦50px横autoの中央寄せ*/
   display: flex;
 }
 
@@ -69,6 +73,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
   /* レスポンシブでの変更点 
     ・横幅を100％に
     ・flexの解除
@@ -81,21 +86,26 @@ footer {
 
   main {
     width: 100%;
-    margin: 50px auto; /*縦50px横autoの中央寄せ*/
+    margin: 30px auto;
+    /*縦50px横autoの中央寄せ*/
     display: block;
   }
 
   /* 親要素のdivの設定 */
-.step-box {
-  width: 90%;
-  margin-top: 20px;
-  padding: 10px;
-  position: relative;
-  background-color: #eee;
-}
+  .step-box {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+    background-color: #eee;
+  }
+
+  .step-box:last-child {
+    margin-right: auto;
+  }
 
   footer {
     width: 100%;
   }
-  
+
 }
