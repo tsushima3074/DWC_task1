@@ -80,14 +80,22 @@ footer {
   }
 
   main {
-    width: 90%;
+    width: 100%;
     margin: 50px auto; /*縦50px横autoの中央寄せ*/
     display: block;
   }
 
+  /* 親要素のdivの設定 */
+.step-box {
+  width: 90%;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
   footer {
     width: 100%;
   }
-
   
 }
